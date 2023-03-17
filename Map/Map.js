@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import Sizes from "./Utils/Sizes.js"
 
 export default class Map {
     static instance
@@ -8,5 +9,7 @@ export default class Map {
         }
         Map.instance = this;
         this.canvas = canvas;
+        this.scene = new THREE.Scene();
+        this.sizes = new Sizes();
     }
 }
