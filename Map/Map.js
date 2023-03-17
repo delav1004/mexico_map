@@ -1,6 +1,8 @@
 import * as THREE from "three";
 import Sizes from "./Utils/Sizes.js"
 
+import Camera from "./Camera.js";
+
 export default class Map {
     static instance
     constructor(canvas) {
@@ -11,5 +13,6 @@ export default class Map {
         this.canvas = canvas;
         this.scene = new THREE.Scene();
         this.sizes = new Sizes();
+        this.Camera = new Camera();
     }
 }
