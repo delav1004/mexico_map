@@ -10,8 +10,11 @@ export default class World {
         this.scene = this.experience.scene;
         this.canvas = this.experience.canvas;
         this.camera = this.experience.camera;
+        this.resources = this.experience.resources;
 
-        this.map = new Map();
+        this.resources.on("ready", ()=>{
+            this.map = new Map();
+        })
     }
 
     resize(){
