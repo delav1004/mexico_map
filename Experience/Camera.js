@@ -1,12 +1,12 @@
 import * as THREE from "three";
-import Map from "./Map.js";
+import Experience from "./Experience.js";
 
 export default class Camera {
     constructor(){
-        this.map = new Map();
-        this.sizes = this.map.sizes;
-        this.scene = this.map.scene;
-        this.canvas = this.map.canvas;
+        this.experience = new Experience();
+        this.sizes = this.experience.sizes;
+        this.scene = this.experience.scene;
+        this.canvas = this.experience.canvas;
         
         this.createPerspectiveCamera();
         this.createOrthographicCamera();
@@ -49,6 +49,6 @@ export default class Camera {
     }
 
     update(){
-        
+
     }
 }

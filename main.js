@@ -1,4 +1,4 @@
 import './style.css'
-import Map from "./Map/Map.js"
+import Experience from "./Experience/Experience.js"
 
-const map = new Map(document.querySelector(".map-canvas"))
+const experience = new Experience(document.querySelector(".experience-canvas"))

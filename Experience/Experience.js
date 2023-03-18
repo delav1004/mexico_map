@@ -2,17 +2,19 @@ import * as THREE from "three";
 import Sizes from "./Utils/Sizes.js"
 
 import Camera from "./Camera.js";
+import Renderer from "./Renderer.js";
 
-export default class Map {
+export default class Experience {
     static instance
     constructor(canvas) {
-        if(Map.instance){
-            return Map.instance
+        if(Experience.instance){
+            return Experience.instance
         }
-        Map.instance = this;
+        Experience.instance = this;
         this.canvas = canvas;
         this.scene = new THREE.Scene();
         this.sizes = new Sizes();
-        this.Camera = new Camera();
+        this.camera = new Camera();
+        this.renderer = new Renderer();
     }
 }
