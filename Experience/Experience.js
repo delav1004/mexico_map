@@ -16,8 +16,16 @@ export default class Experience {
         this.canvas = canvas;
         this.scene = new THREE.Scene();
         this.sizes = new Sizes();
-        this.Time = new Time();
+        this.time = new Time();
         this.camera = new Camera();
         this.renderer = new Renderer();
+
+        this.time.on("update", () => {
+            this.update();
+        })
+    }
+    update(){
+        this.camera.update();
+        this.renderer.update();
     }
 }
