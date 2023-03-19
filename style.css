@@ -32,6 +32,21 @@ header h1{
 h1 {
   font-family: 'Arvo', serif;
 }
+footer {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100px;
+  bottom: 0px;
+  background-color: red;
+}
+.instructions {
+  text-align: center;
+}
+.copyright {
+  text-align: center;
+  padding-bottom: 5px;
+}
 /* .page {
   position: absolute;
   z-index: 99999;
