@@ -36,6 +36,7 @@ export default class Camera {
             -10,
             10
         );
+
         this.scene.add(this.orthographicCamera);
 
         this.helper = new THREE.CameraHelper(this.orthographicCamera);
