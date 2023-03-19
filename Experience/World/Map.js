@@ -13,8 +13,20 @@ export default class Map {
         this.setModel();
     }
 
-    setModel(){
+    setModel() {
+        this.actualMap.children.forEach(child => {
+            child.castShadow = true;
+            child.recieveShadow = true;
+            if (child instanceof THREE.Group) {
+                child.children.forEach((groupchild) => {
+                    groupchild.castShadow = true;
+                    groupchild.recieveShadow = true;
+                });
+            }
+        });
+
         this.scene.add(this.actualMap);
+        this.actualMap.scale.set(0.05, 0.05, 0.05);
     }
 
     resize() {
