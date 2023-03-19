@@ -10,7 +10,7 @@ export default class Map {
         this.time = this.experience.time;
         this.map = this.resources.items.map;
         this.actualMap = this.map.scene;
-        console.log(this.actualMap);
+        // console.log(this.actualMap);
 
         this.lerp = {
             current: 0,
