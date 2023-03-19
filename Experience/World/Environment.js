@@ -21,7 +21,7 @@ export default class Environment {
         // const helper = new THREE.CameraHelper(this.sunLight.shadow.camera);
         // this.scene.add(helper);
 
-        this.ambientlight = new THREE.AmbientLight("B8B8B8", .35);
+        this.ambientlight = new THREE.AmbientLight("#B8B8B8", .35);
         this.scene.add(this.ambientlight);
 
     }
