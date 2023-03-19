@@ -47,8 +47,8 @@ export default class Map {
     onMouseMove(){
         window.addEventListener("mousemove", (e) => {
             this.rotation = ((e.clientX-window.innerWidth / 2) * 2) /window.innerWidth;
-            this.lerp.target = this.rotation;
-            console.log(e.clientX, this.rotation);
+            this.lerp.target = this.rotation*0.04;
+           // console.log(e.clientX, this.rotation);
         });
     }
 
