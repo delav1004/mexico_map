@@ -41,7 +41,7 @@ export default class Map {
 
     setAnimation(){
         this.mixer = new THREE.AnimationMixer(this.actualMap);
-        console.log(this.room);
+        console.log(this.map);
     }
 
     onMouseMove(){
